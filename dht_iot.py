@@ -4,7 +4,7 @@ import board
 from azure.iot.device import IoTHubDeviceClient, Message
 
 # IoT Hub connection string
-CONNECTION_STRING = "HostName=centeral-gp-hub.azure-devices.net;DeviceId=raspi;SharedAccessKey=uNatmLcnuEjTbO8AuQAdclFPNsikn/8Glux47Z2wCxc="
+CONNECTION_STRING = ""
 
 # Initialize IoT client
 client = IoTHubDeviceClient.create_from_connection_string(CONNECTION_STRING)

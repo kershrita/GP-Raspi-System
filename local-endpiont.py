@@ -1,18 +1,20 @@
 import requests
 import random
 import time
-import adafruit_dht
-import board
+# import adafruit_dht
+# import board
 
-API_URL = "http://192.168.1.45/graduation/public/api/sensor/readings"
+API_URL = "https://the-boys.softwareconnect.net/api/sensor/readings"
 
 # Initialize DHT22 sensor
-sensor = adafruit_dht.DHT22(board.D4)
+# sensor = adafruit_dht.DHT22(board.D4)
 
 while True:
     try:
-        temperature = sensor.temperature
-        humidity = sensor.humidity
+        # temperature = sensor.temperature
+        # humidity = sensor.humidity
+        temperature = random.randint(0, 100)
+        humidity = random.randint(0, 100)
 
         # Create message JSON
         payload = {
